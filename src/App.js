@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import Banner from "./components/header/Banner";
+
+import { name, age, person } from "./data";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <Banner></Banner>
+      <p>my content</p>
+      <p>{name}</p>
+      <p>{age}</p>
+      <p>{person.name}</p>
+      <p>{person.age}</p>
+    </section>
   );
-}
+};
+
+// import * as data from "./data";
+// const App = () => {
+//   return (
+//     <section>
+//       <p>my content</p>
+//       <p>{data.name}</p>
+//       <p>{data.age}</p>
+//       <p>{data.person.name}</p>
+//       <p>{data.person.age}</p>
+//     </section>
+//   );
+// };
 
 export default App;
