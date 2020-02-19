@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-
 import Banner from "./components/header/Banner";
 
 import { name, age, person } from "./data";
